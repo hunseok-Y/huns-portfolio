@@ -119,6 +119,7 @@ a {
 .purple {
   color: #AA00C7;
   display: inline;
+  font-weight: 700;
 }
 
 /*---------------------------------------------------*/
@@ -206,7 +207,7 @@ a {
 
 .side-text.white::after {
   content: "";
-  width: 40%;
+  width: 35%;
   height: 0;
   border: 1px solid #fff;
   position: absolute;
@@ -259,6 +260,7 @@ a {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 52px;
+  margin-bottom: 120px
 }
 
 .about__container {
@@ -279,16 +281,18 @@ a {
 .left-box .title {
   font-size: 3.5rem;
   font-weight: 700;
+  line-height: 52px;
 }
 
 .about__container .right-box {
   width: 50%;
   height: 100%;
   padding: 40px 90px;
+  text-align: left;
 }
 
 .right-box__list {
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 .right-box__list .item {
@@ -296,6 +300,106 @@ a {
   font-weight: 400;
   margin-bottom: 30px;
 }
+
+/* button */
+.right-box__button {
+  width: 179px;
+  padding: 20px 40px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  transition: all .4s;
+}
+
+.right-box__button:hover {
+  background-color: #AA00C7;
+  transform: translate(0% 100%);
+}
+
+.right-box__button .anchor {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/*---------------------------------------------------*/
+/* Skills */
+/* skills lefr box */
+.skills__side-text::after {
+  top: 17px;
+  left: 110px;
+}
+
+.skills__container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.skills__left-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 452px 100px;
+}
+
+.skills__left-box__text-arear {
+  text-align: center;
+}
+
+.skills__left-box__text-arear .sharp {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #AA00C7;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.skills__left-box__text-arear .title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+/* skills right box */
+.skills__right-box {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 290px 93px;
+}
+
+.skills__right-box__list {
+  text-align: left;
+}
+
+.skill {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+
+.skill .skill-icon {
+  font-size: 1.4rem;
+  margin-right: 20px;
+}
+
+.skill__text-arear .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skill__text-arear .text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+
 
 
 /*---------------------------------------------------*/

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./fullpage/fullpage.min.css">
@@ -22,6 +23,7 @@
   <!-- main -->
   <main class="main">
 
+    <!-- main button -->
     <aside class="main__buttons">
       <ul id="menu" class="menu__list">
         <li data-menuanchor="firstPage" class="item white"><a href="#firstPage" class="anchor">Home</a></li>
@@ -34,7 +36,8 @@
 
     <div id="fullpage" class="main__wrapper">
 
-      <div class="section home">
+      <!-- Home -->
+      <section class="section home">
 
         <div class="home__side-text side-text white">
           <h1 class="title white">Portfolio</h1>
@@ -57,10 +60,10 @@
           <div class="home__line"></div>
         </div>
 
-      </div>
+      </section>
 
-
-      <div class="section about">
+      <!-- About -->
+      <section class="section about">
         <div class="about__side-text side-text">
           <h1 class="title">About</h1>
         </div>
@@ -98,17 +101,81 @@
                 </li>
               </ul>
 
-              <div class="right-box__button">
-                
-              </div>
+              <diV class="right-box__button"><a href="/" class="anchor">이력서 보기</a></diV>
             </div>
           </div>
 
         </div>
-      </div>
-      <div class="section">Some section3</div>
-      <div class="section">Some section4</div>
-      <div class="section">Some section5</div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills">
+        <div class="skills__side-text side-text">
+          <h1 class="title">Skills</h1>
+        </div>
+        <div class="inner">
+
+          <div class="skills__container">
+            <div class="skills__left-box">
+              <div class="skills__left-box__text-arear">
+                <span class="sharp">#퍼블리싱 #협업</span>
+                <h2 class="title">저는 이러한 능력을<br>
+                  가지고있어요!</h2>
+              </div>
+            </div>
+
+
+            <div class="skills__right-box">
+
+              <ul class="skills__right-box__list">
+                <li class="skill">
+                  <i class="fas fa-check skill-icon"><span class="icon__hidden">check</span></i>
+                  <div class="skill__text-arear">
+                    <div class="title">xd + photoshop + illstrator</div>
+                    <p class="text">사진크기 조절 및 간단한 수정이 가능하며,<br>
+                      xd툴로 기본적인 디자인 및 프로토타입을 만들 수 있어요.</p>
+                  </div>
+                 
+                </li>
+
+                <li class="skill">
+                  <i class="fas fa-check skill-icon"><span class="icon__hidden">check</span></i>
+                  <div class="skill__text-arear">
+                    <div class="title">HTML + CSS</div>
+                    <p class="text">작업에 알맞는 시맨틱 태그를 활용하여 정확하고 깔끔하게<br>
+                      코드를 작성하며 규칙적인 클래스명을 사용하고,<br>
+                      반응형 레이아웃을 만들 수 있습니다.</p>
+                  </div>
+                  
+                </li>
+
+                <li class="skill">
+                  <i class="fas fa-check skill-icon"><span class="icon__hidden">check</span></i>
+                  <div class="skill__text-arear">
+                    <div class="title">javascript</div>
+                    <p class="text">ES6문법을 이해하고 활용하려고 노력합니다.</p>
+                  </div>
+                 
+                </li>
+
+                <li class="skill">
+                  <i class="fas fa-check skill-icon"><span class="icon__hidden">check</span></i>
+                  <div class="skill__text-arear">
+                    <div class="title">communication</div>
+                    <p class="text">디자이너와 원활한 소통이 가능하며,<br>
+                      GitHub을 사용하여 팀원들과 협업이 가능합니다.</p>
+                  </div>
+                 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <section class="section">Some section4</section>
+      <section class="section">Some section5</section>
     </div>
 
 
