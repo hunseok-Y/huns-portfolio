@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./fullpage/fullpage.min.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <!-- main -->
+  <main class="main">
+
+    <aside class="main__buttons">
+      <ul id="menu" class="menu__list">
+        <li data-menuanchor="firstPage" class="item white"><a href="#firstPage" class="anchor">Home</a></li>
+        <li data-menuanchor="secondPage" class="item "><a href="#secondPage" class="anchor">About</a></li>
+        <li data-menuanchor="3rdPage" class="item"><a href="#3rdPage" class="anchor">Skills</a></li>
+        <li data-menuanchor="4thpage" class="item"><a href="#4thpage" class="anchor">Projects</a></li>
+        <li data-menuanchor="lastPage" class="item"><a href="#lastPage" class="anchor">Contact</a></li>
+      </ul>
+    </aside>
+
+    <div id="fullpage" class="main__wrapper">
+
+      <div class="section home">
+
+        <div class="home__side-text side-text white">
+          <h1 class="title white">Portfolio</h1>
+        </div>
+
+        <div class="home__animation animation">
+          <div class="animation__text-arear">
+            <span id="i1" class="an-text">안녕하세요!</span>
+            <span id="i2" class="an-text">코딩에서 희열을 느끼는</span>
+            <span id="i3" class="an-text">신입웹퍼블리셔</span>
+            <div id="i4">
+              <span class="i4-itme an-text">양훈석입니다</span>
+              <img src="./img/icon/Hatching Chick Emoji.png" alt="icon" class="i4-img bounce">
+            </div>
+            <div id="i5">
+              <span class="i5-item1 an-text">Portfolio</span>
+              <span class="i5-item2 an-text">2021</span>
+            </div>
+          </div>
+          <div class="home__line"></div>
+        </div>
+
+      </div>
+
+
+      <div class="section about">
+        <div class="about__side-text side-text">
+          <h1 class="title">About</h1>
+        </div>
+
+        <div class="inner">
+          <div class="about__title">
+            <p class="announcement">
+              <div class="purple">원활한 소통</div>과 멈추지 않는<br>
+              노력으로 <div class="purple">성장</div>하는 웹퍼블리셔 입니다.<br>
+              저를 소개하겠습니다.
+            </p>
+          </div>
+          <div class="about__container">
+            <div class="left-box">
+              <h2 class="title">저는 이런 성격을<br>
+                가지고있어요!</h2>
+            </div>
+
+            <div class="right-box">
+              <ul class="right-box__list">
+                <li class="item">
+                  <p class="text">현재의 자신을 <span class="purple">만족</span>하지 않아요</p>
+                </li>
+                <li class="item">
+                  <p class="text">미래를 위해 <span class="purple">항상</span> 공부해요</p>
+                </li>
+                <li class="item">
+                  <p class="text">주변환경에 빠르게 <span class="purple">적응</span>하려 노력해요</p>
+                </li>
+                <li class="item">
+                  <p class="text">맡은 일은 어떻게든 끝낼려는 <span class="purple">끈기</span>가 있어요</p>
+                </li>
+                <li class="item">
+                  <p class="text">누구에게나 배우려는 <span class="purple">자세</span>가 되어있어요</p>
+                </li>
+              </ul>
+
+              <div class="right-box__button">
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section">Some section3</div>
+      <div class="section">Some section4</div>
+      <div class="section">Some section5</div>
+    </div>
+
+
+  </main>
+
+
+
+
+
+
+
+  <script type="module" src="./main.js"></script>
+  <script src="./fullpage/fullpage.min.js"></script>
+</body>
+
+</html>
