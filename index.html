@@ -9,12 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./fullpage/fullpage.min.css">
   <link rel="stylesheet" href="./main.css">
 </head>
@@ -24,7 +25,7 @@
   <main class="main">
 
     <!-- main button -->
-    <aside class="main__buttons">
+    <div class="main__buttons">
       <ul id="menu" class="menu__list">
         <li data-menuanchor="firstPage" class="item white"><a href="#firstPage" class="anchor">Home</a></li>
         <li data-menuanchor="secondPage" class="item "><a href="#secondPage" class="anchor">About</a></li>
@@ -32,7 +33,7 @@
         <li data-menuanchor="4thpage" class="item"><a href="#4thpage" class="anchor">Projects</a></li>
         <li data-menuanchor="lastPage" class="item"><a href="#lastPage" class="anchor">Contact</a></li>
       </ul>
-    </aside>
+    </div>
 
     <div id="fullpage" class="main__wrapper">
 
@@ -44,19 +45,19 @@
         </div>
 
         <div class="home__animation animation">
-          <div class="animation__text-arear">
+          <p class="animation__text-arear">
             <span id="i1" class="an-text">안녕하세요!</span>
             <span id="i2" class="an-text">코딩에서 희열을 느끼는</span>
             <span id="i3" class="an-text">신입웹퍼블리셔</span>
-            <div id="i4">
-              <span class="i4-itme an-text">양훈석입니다</span>
+            <span id="i4">
+              <span class="i4-item an-text">양훈석입니다</span>
               <img src="./img/icon/Hatching Chick Emoji.png" alt="icon" class="i4-img bounce">
-            </div>
-            <div id="i5">
+            </span>
+            <span id="i5">
               <span class="i5-item1 an-text">Portfolio</span>
               <span class="i5-item2 an-text">2021</span>
-            </div>
-          </div>
+            </span>
+          </p>
           <div class="home__line"></div>
         </div>
 
@@ -101,7 +102,7 @@
                 </li>
               </ul>
 
-              <diV class="right-box__button"><a href="/" class="anchor">이력서 보기</a></diV>
+              <diV class="right-box__button button"><a href="/" class="anchor">이력서 보기</a></diV>
             </div>
           </div>
 
@@ -135,7 +136,7 @@
                     <p class="text">사진크기 조절 및 간단한 수정이 가능하며,<br>
                       xd툴로 기본적인 디자인 및 프로토타입을 만들 수 있어요.</p>
                   </div>
-                 
+
                 </li>
 
                 <li class="skill">
@@ -146,7 +147,7 @@
                       코드를 작성하며 규칙적인 클래스명을 사용하고,<br>
                       반응형 레이아웃을 만들 수 있습니다.</p>
                   </div>
-                  
+
                 </li>
 
                 <li class="skill">
@@ -155,7 +156,7 @@
                     <div class="title">javascript</div>
                     <p class="text">ES6문법을 이해하고 활용하려고 노력합니다.</p>
                   </div>
-                 
+
                 </li>
 
                 <li class="skill">
@@ -165,17 +166,206 @@
                     <p class="text">디자이너와 원활한 소통이 가능하며,<br>
                       GitHub을 사용하여 팀원들과 협업이 가능합니다.</p>
                   </div>
-                 
+
                 </li>
               </ul>
             </div>
           </div>
         </div>
+      </section>
 
+      <!-- Projects -->
+      <section class="section projects">
+        <div class="projects__side-text side-text">
+          <h1 class="title">Projects</h1>
+        </div>
+
+
+        <div class="inner">
+          <div class="swiper projects__swiper">
+            <div class="swiper-wrapper projects__wrapper">
+              <div class="swiper-slide slide-box">
+                <div class="projects__container">
+                  <div class="projects__container-left container-left">
+
+                    <div class="container-left__number">
+                      <span class="number">01</span>
+                      <span class="title">Clone coding Website</span>
+                      <h3 class="name">HUVIS 사이트</h3>
+                    </div>
+
+
+                    <ul class="container-left__text-box">
+                      <li class="box">
+                        <span class="title">기여도</span>
+                        <span class="text">퍼블리싱100%</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">사용 프로그램</span>
+                        <span class="text">Visual Studio Code</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">소개</span>
+                        <p class="text">기존에 있는 사이트를 디자인만 활용하여 만든<br>
+                          클론코딩 프로젝트입니다. 만들면서 몰랐던 코드들과<br>
+                          마크업의 중요성과 기존에 알고있던 내용들을 다른 방법<br>
+                          으로도 사용할 수 있는 내용을 깊게 알 수 있었던<br>
+                          프로젝트입니다.</p>
+                      </li>
+                    </ul>
+
+                    <div class="projects__button-box">
+                      <diV class="button"><a href="https://github.com/hunseok-Y/huvis" class="anchor"
+                          target="_blank">GitHub 보기</a>
+                      </diV>
+                      <diV class="button"><a href="https://hunseok-y.github.io/huvis/" class="anchor"
+                          target="_blank">사이트 보기</a>
+                      </diV>
+                    </div>
+                  </div>
+
+                  <div class="projects__container-right container-right">
+                    <div class="container-right__bg bg-1"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /*---------------------------------------------------*/ -->
+
+              <div class="swiper-slide slide-box">
+                <div class="projects__container">
+                  <div class="projects__container-left container-left">
+
+                    <div class="container-left__number">
+                      <span class="number">02</span>
+                      <span class="title">Design Website</span>
+                      <h3 class="name">늘봄 (반응형)</h3>
+                    </div>
+
+
+                    <ul class="container-left__text-box">
+                      <li class="box">
+                        <span class="title">기여도</span>
+                        <span class="text">디자인100% + 기획100% + 퍼블리싱100%</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">사용 프로그램</span>
+                        <span class="text">XD + Photoshop + Visual Studio Code</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">소개</span>
+                        <p class="text">기획,디자인,퍼블리싱을 진행하였습니다.<br>
+                          반응형을 처음으로 진행하였으며, 그 경험을 통해<br>
+                          반응형의 이해도를 높이는 큰도움이 되었고 마크업의<br>
+                          중요성을 깨닳는 시간이 되었습니다.</p>
+                      </li>
+                    </ul>
+
+                    <div class="projects__button-box">
+                      <diV class="button"><a href="https://github.com/hunseok-Y/pet" class="anchor"
+                          target=”_blank”>GitHub 보기</a>
+                      </diV>
+                      <diV class="button"><a href="https://hunseok-y.github.io/pet/" class="anchor" target="_blank">사이트
+                          보기</a>
+                      </diV>
+                    </div>
+                  </div>
+
+                  <div class="projects__container-right container-right">
+                    <div class="container-right__bg bg-2"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /*---------------------------------------------------*/ -->
+
+              <div class="swiper-slide slide-box">
+                <div class="projects__container">
+                  <div class="projects__container-left container-left">
+
+                    <div class="container-left__number">
+                      <span class="number">03</span>
+                      <span class="title">Standard Website</span>
+                      <h3 class="name">J.Farmer</h3>
+                    </div>
+
+
+                    <ul class="container-left__text-box">
+                      <li class="box">
+                        <span class="title">기여도</span>
+                        <span class="text">100%</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">사용 프로그램</span>
+                        <span class="text">XD + Photoshop + Visual Studio Code</span>
+                      </li>
+
+                      <li class="box">
+                        <span class="title">소개</span>
+                        <p class="text">공부하면서 처음으로 작업한 사이트입니다.<br>
+                          직접 마크업과 CSS로 변해가는 작업물을 보면서<br>
+                          자신감을 얻었고 배웠던 내용들을 천천히 다시 보면서<br>
+                          부족했던 부분들을 더 공부하고 활용할 수 있었습니다.</p>
+                      </li>
+                    </ul>
+
+                    <div class="projects__button-box">
+                      <diV class="button"><a href="https://github.com/hunseok-Y/j.farmer" class="anchor"
+                          target=”_blank”>GitHub 보기</a>
+                      </diV>
+                      <diV class="button"><a href="https://hunseok-y.github.io/j.farmer/" class="anchor"
+                          target="_blank">사이트 보기</a>
+                      </diV>
+                    </div>
+                  </div>
+
+                  <div class="projects__container-right container-right">
+                    <div class="container-right__bg bg-3"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /*---------------------------------------------------*/ -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="section contact">
+
+        <div class="contact__side-text side-text">
+          <h1 class="title">contact</h1>
+        </div>
+
+        <div class="inner">
+          <div class="contact__title">
+            <p class="title">
+              <span class="purple">"현재의 위치에 만족하지않고"</span><br>
+              한단계씩 도전하는 웹퍼블리셔가 되고싶습니다.
+            </p>
+            <p class="text"><span class="bold">"천재는 노력하는 사람을 이길수 없고 노력하는 사람은 즐기는 사람을 이길 수 없다."</span><br>
+              어떠한 일이든 즐기는 사람을 이길 수 없듯 저는 공부을 하면서 여러가지 감정을 많이 느꼈습니다.<br>
+              희열과 짜릿한 감정들은 제가 이 공부를 하면서 즐길 수 있는 요소가 충분했었고<br>
+              지기싫어하는 성격이어서 항상 노력으로 실력을 쌓았습니다.<br>
+              앞으로도 <span class="bold">배움의 즐거움과 노력으로 더 큰 목표를 세우고 묵묵히 성장하겠습니다.</span> </p>
+          </div>
+
+          <div class="contact__end">
+            <p class="end">
+              끝까지 봐주셔서 감사합니다 :)
+            </p>
+          </div>
+        </div>
 
       </section>
-      <section class="section">Some section4</section>
-      <section class="section">Some section5</section>
     </div>
 
 
@@ -184,11 +374,11 @@
 
 
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
 
-
-
-  <script type="module" src="./main.js"></script>
-  <script src="./fullpage/fullpage.min.js"></script>
 </body>
 
 </html>

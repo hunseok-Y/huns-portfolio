@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const projectSwiper = new Swiper(".projects__swiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
   // fullpage
-  new fullpage("#fullpage", {
+  $("#fullpage").fullpage({
     //options here
     autoScrolling: true,
     // scrollHorizontally: true,
@@ -8,8 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
     menu: "#menu",
     slidesNavigation: true,
+    afterLoad: function (origin, destination, direction) {
+      if (origin === 2) {
+        projectSwiper.update();
+      }
+    },
   });
-
-  // methods
-  fullpage_api.setAllowScrolling(true);
 });
