@@ -12,6 +12,12 @@ body {
   margin: 0;
   cursor: default;
   overflow: hidden;
+
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
 }
 
 .inner {
@@ -19,6 +25,7 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
+
 }
 
 li {
@@ -45,13 +52,13 @@ a {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 70px;
+  left: 40px;
   transform: rotate(90deg);
   transform-origin: 0% 100%;
 }
 
 .side-text .title {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #AA00C7;
   opacity: .2;
@@ -244,7 +251,7 @@ a {
 
 
 .side-text .title.white {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
   opacity: .2;
@@ -252,12 +259,12 @@ a {
 
 .side-text.white::after {
   content: "";
-  width: 35%;
+  width: 40%;
   height: 0;
   border: 1px solid #fff;
   position: absolute;
-  top: 17px;
-  left: 160px;
+  top: 16px;
+  left: 120px;
   opacity: .2;
 }
 
@@ -295,32 +302,28 @@ a {
 
 /*---------------------------------------------------*/
 /* about */
+
 .about__side-text::after {
-  top: 17px;
-  left: 120px;
+  top: 16px;
+  left: 90px;
 }
 
 .about__title {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 52px;
-  margin-bottom: 120px
+  margin-bottom: 12rem;
 }
 
 .about__container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
 .about__container .left-box {
   width: 50%;
-  height: 100%;
-  padding: 167px 0;
-  border-right: 1px solid rgba(0, 0, 0, .2);
 }
 
 .left-box .title {
@@ -331,9 +334,11 @@ a {
 
 .about__container .right-box {
   width: 50%;
-  height: 100%;
-  padding: 40px 90px;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(0, 0, 0, .2);
 }
 
 .right-box__list {
@@ -350,8 +355,8 @@ a {
 /* Skills */
 /* skills lefr box */
 .skills__side-text::after {
-  top: 17px;
-  left: 110px;
+  top: 16px;
+  left: 80px;
 }
 
 .skills__container {
@@ -362,11 +367,9 @@ a {
 
 .skills__left-box {
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 452px 100px;
 }
 
 .skills__left-box__text-arear {
@@ -390,11 +393,9 @@ a {
 /* skills right box */
 .skills__right-box {
   width: 60%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 290px 93px;
 }
 
 .skills__right-box__list {
@@ -434,8 +435,8 @@ a {
 }
 
 .projects__side-text::after {
-  top: 17px;
-  left: 150px;
+  top: 16px;
+  left: 110px;
 }
 
 .slide-box {
@@ -492,7 +493,7 @@ a {
 .projects__button-box {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 .projects__button-box .button {
@@ -511,7 +512,7 @@ a {
 .container-right__bg {
   width: calc(100% - 40px);
   height: calc(100% - 40px);
-
+  box-shadow: 20px 20px 20px 0px rgb(0 0 0 / 30%);
   background-size: cover;
   background-position: center;
 }
@@ -533,7 +534,7 @@ a {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   position: absolute;
-  bottom: 70px;
+  bottom: 2rem;
   left: 0;
   right: 0;
 }
@@ -555,31 +556,34 @@ a {
 /*---------------------------------------------------*/
 /* contact */
 .contact__side-text::after {
-  top: 17px;
-  left: 150px;
+  top: 16px;
+  left: 100px;
 }
 
 .contact__title {
+  /* width: 64vw; */
   text-align: left;
+  height: 100vh;
+  margin-top: 40px;
 }
 
 .contact__title .title {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 52px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .contact__title .text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 40px;
 }
 
 .contact__end {
   position: absolute;
+  bottom: 150px;
   right: 0;
-  margin-top: 170px;
 }
 
 .contact__end .end {
@@ -642,4 +646,42 @@ a {
   100% {
     transform: translateY(-12px);
   }
+}
+
+
+/*---------------------------------------------------*/
+/*media*/
+@media screen and (max-width: 1024px) {
+  .side-text {
+    left: 4rem;
+  }
+
+  .side-text .title.white {
+    font-size: 1.6rme;
+  }
+
+  .side-text .title.white {
+    font-size: 2rem;
+  }
+
+  .side-text.white::after {
+    top: 10px;
+    left: 100px;
+  }
+
+  .an-text {
+    font-size: 4rem;
+    padding: 6px;
+  }
+
+  .i5-item1,
+  .i5-item2 {
+    font-size: 8px;
+  }
+
+  .menu__list {}
+
+  .about__title {}
+
+  .about__container {}
 }

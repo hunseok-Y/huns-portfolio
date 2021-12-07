@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#fullpage").fullpage({
     //options here
     autoScrolling: true,
+    // 너비가 1000일때 수동 원페이지 -> 스크롤
+    responsiveWidth: 768,
     // scrollHorizontally: true,
     scrollingSpeed: 1500,
     anchors: ["firstPage", "secondPage", "3rdPage", "4thpage", "lastPage"],
