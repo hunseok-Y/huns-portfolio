@@ -66,7 +66,7 @@ a {
 
 .side-text::after {
   content: "";
-  width: 40%;
+  width: 30%;
   height: 0;
   border: 1px solid #AA00C7;
   position: absolute;
@@ -82,13 +82,13 @@ a {
   font-weight: 500;
   letter-spacing: 2px;
   margin: 0;
-  font-size: 48px;
+  font-size: 4rem;
   text-shadow: 0 0 1px #000;
   display: block;
   padding: 1rem 0;
 }
 
-#i4 {
+.i4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +102,7 @@ a {
   transform: scale(1);
 }
 
-#i5 {
+.i5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,25 +182,23 @@ a {
 /*---------------------------------------------------*/
 /*animation*/
 
-#i1 {}
-
-#i2 {
+.i2 {
   opacity: 0;
   animation: show_text 1s linear 1.7s forwards;
 }
 
-#i3 {
+.i3 {
   opacity: 0;
   animation: show_text 1s linear 2s forwards;
 }
 
-#i4 {
+.i4 {
   transform: scale(-1, 1);
   opacity: 0;
   animation: show_text 1s linear 2.5s forwards, spin 0.1s linear 3.5s forwards;
 }
 
-#i5 {
+.i5 {
   opacity: 0;
   animation: show_text 1s linear 3s forwards;
 }
@@ -220,7 +218,7 @@ a {
   align-items: center;
 }
 
-#menu {
+.menu {
   width: 100%;
 }
 
@@ -259,7 +257,7 @@ a {
 
 .side-text.white::after {
   content: "";
-  width: 40%;
+  width: 30%;
   height: 0;
   border: 1px solid #fff;
   position: absolute;
@@ -313,7 +311,7 @@ a {
   font-size: 3rem;
   font-weight: 500;
   line-height: 52px;
-  margin-bottom: 12rem;
+  margin-bottom: 7rem;
 }
 
 .about__container {
@@ -327,7 +325,7 @@ a {
 }
 
 .left-box .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 52px;
 }
@@ -373,7 +371,7 @@ a {
 }
 
 .skills__left-box__text-arear {
-  text-align: center;
+  text-align: left;
 }
 
 .skills__left-box__text-arear .sharp {
@@ -385,7 +383,7 @@ a {
 }
 
 .skills__left-box__text-arear .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 52px;
 }
@@ -540,7 +538,7 @@ a {
 }
 
 .swiper-pagination-bullet {
-  background-color: #333;
+  background-color: .333;
   opacity: .3;
 }
 
@@ -589,6 +587,21 @@ a {
 .contact__end .end {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.top__arrow {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: #AA00C7;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: none;
 }
 
 
@@ -671,7 +684,18 @@ a {
 
   .an-text {
     font-size: 4rem;
-    padding: 6px;
+  }
+
+  .animation__text-arear {
+    transform: scale(.8);
+  }
+
+  .main__buttons {
+    right: 0;
+  }
+
+  .menu__list .anchor {
+    font-size: 1.8rem;
   }
 
   .i5-item1,
@@ -679,9 +703,58 @@ a {
     font-size: 8px;
   }
 
-  .menu__list {}
+  .about .inner {
+    transform: scale(.8);
+  }
 
-  .about__title {}
+  .skills__container {
+    transform: scale(.8);
+  }
 
-  .about__container {}
+  .slide-box {
+    transform: scale(.8);
+  }
+
+  .projects__container {
+    justify-content: space-around;
+  }
+
+  .contact .inner {
+    transform: scale(.8);
+  }
+
+  .container-left {
+    margin: 0;
+  }
+
+  .projects__container-right {
+    height: 100%;
+  }
+
+  .contact__end {
+    right: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__buttons {
+    display: none;
+  }
+
+  .projects__container {
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .container-left {
+    height: 100%;
+  }
+
+  .projects__container-right {
+    display: none;
+  }
+
+  .contact__title {
+    height: 70vh;
+  }
 }
