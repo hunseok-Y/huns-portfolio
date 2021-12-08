@@ -209,6 +209,10 @@ a {
 
 /*---------------------------------------------------*/
 /* main */
+.main-title {
+  display: none;
+}
+
 .main__buttons {
   position: fixed;
   right: 40px;
